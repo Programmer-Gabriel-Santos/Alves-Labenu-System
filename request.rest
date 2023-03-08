@@ -1,0 +1,75 @@
+GET http://localhost:3003/estudante
+
+###
+
+POST http://localhost:3003/estudante
+Content-Type: application/json
+
+{ 
+"nome": "teste13", 
+"email": "teste13@labenu.com", 
+"data_nasc": "2020-01-01", 
+"turma_id": "012", 
+"hobbies": "Assistir filmes"
+}
+
+###
+
+PUT http://localhost:3003/estudante
+Content-Type: application/json
+
+{
+    "aluno_id": "1662820282938",
+    "turma_id": "014"
+}
+
+###
+
+GET http://localhost:3003/selecionar-turmas
+
+###
+
+POST http://localhost:3003/criar-turma
+Content-Type: application/json
+
+{
+    "nome":"teste POO"
+}
+
+###
+
+PUT http://localhost:3003/mudanca-modulo
+Content-Type: application/json
+
+{
+    "idTurma": "012",
+    "modulo": "3"
+}
+
+###
+
+GET http://localhost:3003/docentes?nome=c
+
+###
+
+POST http://localhost:3003/docente
+Content-Type: application/json
+
+{ 
+"nome": "teste13", 
+"email": "teste13@labenu.com", 
+"data_nasc": "2020-01-01", 
+"turma_id": "011", 
+"habilidades": "CSS"
+}
+
+###
+
+PUT http://localhost:3003/docentes
+Content-Type: application/json
+
+{
+    "docente_id": "1662749381908",
+    "turma_id": "015"
+
+}
